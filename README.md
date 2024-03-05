@@ -45,7 +45,7 @@ to install and run the service on your system.
 
 The previous and following knowledge was derived from reverse-enginnering the linux .iso provided for the Arduino Pro Gateway at:
 - https://support.arduino.cc/hc/en-us/articles/4409774456082-Create-a-bootable-microSD-card-for-Arduino-Pro-Gateway 
-- (uname -vdirect download link) https://downloads.arduino.cc/arduino_pro_gateway_for_lora/prod/sd_kit_image_releases/v1.1.0/20190206PROD_ArduinoProGateway_SD.zip
+- (direct download link) https://downloads.arduino.cc/arduino_pro_gateway_for_lora/prod/sd_kit_image_releases/v1.1.0/20190206PROD_ArduinoProGateway_SD.zip
 
 The original .iso was running a very outdated version of Raspbian (now Raspberry OS) and was set up to execute the Arduino Connector LoRa forwarding protocol for The Things Network.
 This was done through a system service monitoring the commissioning state of the gateway from the Arduino website.
