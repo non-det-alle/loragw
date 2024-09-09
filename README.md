@@ -25,7 +25,7 @@ Build the executable by running `./compile.sh` inside the `packet_forwarder/` di
 
 Setup .conf files in `~/packet_forwarder/lora_pkt_fwd` according to the readme.
 Notes: 
-- the EMB-LR1301-mPCIe chip should be PCB_E336 as the datasheet includes a FPGA.
+- the EMB-LR1301-mPCIe chip should be PCB_E336 as the datasheet includes a FPGA. Fetch the right basic `global_conf` from the `~/packet_forwarder/lora_pkt_fwd/cfg/` directory
 - a gateway Id can be automaticaly generated and written in local.conf via `~/packet_forwarder/lora_pkt_fwd/update_gwid.sh`
 
 Copy `start.sh` into `home/pi` or your custom home directory.
@@ -35,7 +35,7 @@ Sometimes the concentrator fails to start, so the execution is looped until it d
 # Automatic start
 
 The file `lora_pkt_fwd.service` is provided to automatically run the executable at startup.
-It may need to be edited accordingly if you used a custo home directory installation.
+It may need to be edited accordingly if you used a custom home directory installation.
 Copy it in the `/etc/systemd/system/` directory and run 
 ```
 sudo systemctl enable lora_pkt_fwd.service && \
