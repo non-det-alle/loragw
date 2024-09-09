@@ -21,7 +21,7 @@ The file `/etc/embit/embConfigs.sh` need to be installed manually.
 Useful functions and info on the GPIO pins can be sourced therein. 
 
 Clone both the repositories indicated on the top of the page into `/home/pi` or your custom home directory. 
-Build the executable by running `./packet_forwarder/compile.sh`.
+Build the executable by running `./compile.sh` inside the `packet_forwarder/` directory.
 
 Setup .conf files in `~/packet_forwarder/lora_pkt_fwd` according to the readme.
 Notes: 
